@@ -2,11 +2,12 @@
 	"name": "fcc-learn-npm-package-json",
 	"author": "Nicodemus",
 	"description": "a practice for freeCampCode backend.",
-  "version": "0.0.1",
-  "license": "MIT",
+	"version": "0.0.1",
+	"license": "MIT",
 	"dependencies": {
-		"express": "^4.14.0"
-  },
+		"express": "^4.14.0",
+		"fcc-express-bground": "0.0.5"
+	},
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
@@ -15,5 +16,9 @@
 		"type": "git",
 		"url": "https://idontknow/todo.git"
 	},
-  "keywords": ["freecodecamp", "practice", "nodejs"] 
+	"keywords": [
+		"freecodecamp",
+		"practice",
+		"nodejs"
+	]
 }
