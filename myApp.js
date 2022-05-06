@@ -31,5 +31,11 @@ app.get('/:word/echo', function(req, res, next){
   res.send({'echo': req.params.word});
 });
 
+app.route('/name').get(function(req, res){
+  console.log('query:\t', req.query);
+  const name = req.query.first + ' ' +req.query.last;
+  res.send({'name':name});
+});
+
 module.exports = app;
 
