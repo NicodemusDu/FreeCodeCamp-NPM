@@ -2,8 +2,9 @@ let express = require('express');
 let app = express();
 
 
-app.use('/', function(){
-  console.log('Hello World');
+app.get('/', function(req, res){
+  res.sendFile('Hello Express');
+  console.log('Hello Express');
 });
 
 module.exports = app;
