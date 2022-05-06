@@ -9,8 +9,13 @@ app.get('/', function(req, res){
 });
 
 app.get('/json', function(req, res){
-  res.send({"message": "Hello json"});
-  console.log('get /json');
+  var msg = "Hello json";
+  const mySecret = process.env['MESSAGE_STYLE'];
+  console.log('get /json mySecret:\t', mySecret);
+  if(mySecret==='uppercase'){
+    msg = msg.toUpperCase();
+  }
+  res.send({"message": msg});
 });
 
 module.exports = app;
