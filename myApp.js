@@ -28,7 +28,7 @@ app.get('/json', function(req, res){
 
 app.get('/:word/echo', function(req, res, next){
   console.log('parameter word:\t', req.params.word);
-  res.send({'echo: ': req.params.word});
+  res.send({'echo': req.params.word});
 });
 
 module.exports = app;
