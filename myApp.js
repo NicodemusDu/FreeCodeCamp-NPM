@@ -8,5 +8,10 @@ app.get('/', function(req, res){
   console.log('Hello Express');
 });
 
+app.get('/json', function(req, res){
+  res.send({"message": "Hello json"});
+  console.log('get /json');
+});
+
 module.exports = app;
 
