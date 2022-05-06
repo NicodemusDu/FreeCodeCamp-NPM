@@ -2,6 +2,7 @@
 	"name": "fcc-learn-npm-package-json",
 	"author": "Nicodemus",
 	"description": "a practice for freeCampCode backend.",
+  "license": "MIT",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
