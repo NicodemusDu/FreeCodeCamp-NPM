@@ -7,7 +7,10 @@
 	"dependencies": {
 		"express": "^4.14.0",
 		"fcc-express-bground": "0.0.5",
-		"body-parser": "^1.20.0"
+		"dotenv": "^8.2.0",
+		"body-parser": "^1.20.0",
+		"mongodb": "~3.6.0",
+		"mongoose": "~5.4.0"
 	},
 	"main": "server.js",
 	"scripts": {
@@ -15,11 +18,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://idontknow/todo.git"
+		"url": "https://github.com/NicodemusDu/FreeCodeCamp-NPM.git"
 	},
 	"keywords": [
 		"freecodecamp",
 		"practice",
+		"mongoDB",
 		"nodejs"
 	]
 }
