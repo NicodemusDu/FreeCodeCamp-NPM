@@ -39,6 +39,10 @@ app.route('/name').get(function(req, res){
   console.log('query:\t', req.query);
   const name = req.query.first + ' ' +req.query.last;
   res.send({'name':name});
+}).post(function(req, res){
+  const name = req.body.first + ' ' +req.body.last;
+  console.log('post name:\n', name);
+  res.send({'name':name});
 });
 
 module.exports = app;
