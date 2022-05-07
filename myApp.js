@@ -1,8 +1,11 @@
 let express = require('express');
+let bodyParser = require('body-parser');
 let app = express();
 
 
 app.use('/public', express.static(__dirname+'/public'));
+
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/now', function(req, res, next){
   req.time = new Date().toString();
@@ -30,6 +33,7 @@ app.get('/:word/echo', function(req, res, next){
   console.log('parameter word:\t', req.params.word);
   res.send({'echo': req.params.word});
 });
+
 
 app.route('/name').get(function(req, res){
   console.log('query:\t', req.query);
